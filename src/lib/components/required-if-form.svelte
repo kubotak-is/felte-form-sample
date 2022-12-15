@@ -1,12 +1,12 @@
 <script lang="ts">
-	import InputLabel from '$lib/components//form/input-label.svelte';
+	import InputRadio from './form/input-radio.svelte';
+	import InputLabel from '$lib/components/form/input-label.svelte';
 	import InputText from '$lib/components/form/input-text.svelte';
-	import SubmitButton from '$lib/components//form/submit-button.svelte';
+	import SubmitButton from '$lib/components/form/submit-button.svelte';
 	import { createForm } from 'felte';
 	import { validator } from '@felte/validator-yup';
 	import * as yup from 'yup';
 	import { descriptive } from 'yup-locale-ja';
-	import InputRadio from './form/input-radio.svelte';
 
 	yup.setLocale(descriptive);
 	const schema = yup.object({
